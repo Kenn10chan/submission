@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submission</title>
+    <link rel="stylesheet" href="/connect.php">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@200;400;700&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Regisration form
+        </div>
+        <div class="forms">
+            <form name="contact" id="contact" method="POST" action="/connect.php" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" required />  
+                <div class="input_field">
+                    <label >First Name </label>
+                    <input type="text" class="input" id="firstName" name="firstName" required>
+                </div>
+                <div class="input_field">
+                    <label >Last Name </label>
+                    <input type="text" class="input" id="lastName" name="lastName" required>
+                </div>
+                <div class="input_field">
+                    <label >Password </label>
+                    <input type="password" class="input" id="password" name="password" required>
+                </div>
+                <div class="input_field">
+                    <label >Confirm Password </label>
+                    <input type="password" class="input" id="password" name="password" required>
+                </div>
+                <div class="input_field">
+                    <label >Email Adress </label>
+                    <input type="email" class="input" id="email" name="email" required>
+                </div>
+                <div class="input_field">
+                    <label >Phone Number </label>
+                    <input type="text" class="input" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div class="input_field">
+                    <label >Adresss </label>
+                   <textarea  class="textarea"></textarea>
+                </div>
+                <div class="input_field">
+                    <label >Postal code </label>
+                    <input type="text" class="input" id="postalCode" name="postalCode" required>
+                </div>
+                <div class="input_field">
+           
+                    <input type="submit" value="Register"  class="btn">
+         
+                </div>
+            
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>
